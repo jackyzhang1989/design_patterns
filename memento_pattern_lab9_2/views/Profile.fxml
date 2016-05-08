@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="memento_pattern_lab9_2.views.Controller">
+   <children>
+      <GridPane layoutX="137.0" layoutY="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="198.0" prefWidth="303.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="69.0" prefWidth="245.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1">
+               <children>
+                  <Label text="Profile info" />
+               </children>
+            </HBox>
+            <Label text="id" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="id" onKeyPressed="#contentChange" prefHeight="6.0" prefWidth="199.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <TextField fx:id="name" onKeyPressed="#contentChange" prefHeight="6.0" prefWidth="199.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <TextField fx:id="ssn" onKeyPressed="#contentChange" prefHeight="6.0" prefWidth="199.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label text="Username" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="SSN" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="91.0" minWidth="10.0" prefWidth="25.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="185.0" minWidth="10.0" prefWidth="74.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="242.0" minWidth="10.0" prefWidth="174.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="199.0" minWidth="10.0" prefWidth="36.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="44.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="80.0" minHeight="10.0" prefHeight="67.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="57.0" minHeight="0.0" prefHeight="34.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="114.0" minHeight="3.0" prefHeight="3.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="137.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="137.0" minHeight="6.0" prefHeight="33.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Button fx:id="btnSave" layoutX="352.0" layoutY="240.0" mnemonicParsing="false" onAction="#btnSave_click" text="Save" />
+      <Button fx:id="btnUndo" layoutX="278.0" layoutY="240.0" mnemonicParsing="false" onAction="#btnUndo_click" text="Undo" />
+      <Button fx:id="btnLoad" layoutX="204.0" layoutY="240.0" mnemonicParsing="false" onAction="#btnLoad_click" text="Load" />
+   </children>
+</AnchorPane>
